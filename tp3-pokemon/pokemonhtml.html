@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./pokemoncss.css">
+    <title>Pokemon</title>
+</head>
+
+<body>
+<div id="supercontainer">
+<div class="barre">
+    <input id="monPokemon" class="barreRecherche" type="text" placeholder="Entrez un pokemon">
+    <input type="button" id="monBouton" method="get" value="Rechercher" onclick="async()"> <br>
+    <input type="button" id="suivant" method="get" value="Precedent" onclick="precedent()">
+    <input type="button" id="precedent" method="get" value="Suivant" onclick="suivant()">
+</div>
+
+<div id="contenu" class="container">
+    <img id="photoPkmn" src="" alt="">
+    <p id="nom"></p>
+    <p id="num"></p>
+    <p id="poids"></p>
+    <p id="type"></p>
+
+</div>
+
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="pokemonjs.js"></script>
+</body>
+</html>
